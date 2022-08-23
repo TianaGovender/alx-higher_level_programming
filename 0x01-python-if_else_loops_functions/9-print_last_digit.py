@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-
-for i in range(0, 99):
-    print("{:02d}".format(i), end=", ")
-print(i + 1)
+def print_last_digit(number):
+    if number < 0:
+        print("{}".format((number * (-1)) % 10), end='')
+        return (number * (-1)) % 10
+    else:
+        print("{}".format(number % 10), end='')
+        return number % 10
