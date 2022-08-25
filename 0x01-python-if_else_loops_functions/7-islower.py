@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-
-for i in range(0, 99):
-    print("{:02d}".format(i), end=", ")
-print(i + 1)
+def islower(c):
+    if ord(c) < 91:
+        return False
+    elif ord(c) > 96:
+        return True

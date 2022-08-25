@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
-for i in range(0, 99):
-    print("{:02d}".format(i), end=", ")
-print(i + 1)
+for c in range(122, 96, -1):
+    if c % 2 != 0:
+        c = c - 32
+    print("{}".format(chr(c)), end='')

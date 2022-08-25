@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
-for i in range(0, 99):
-    print("{:02d}".format(i), end=", ")
-print(i + 1)
+def uppercase(str):
+    for s in str:
+        if 96 < ord(s) < 123:
+            s = chr(ord(s) - 32)
+        print("{}".format(s), end='')
+    print()
