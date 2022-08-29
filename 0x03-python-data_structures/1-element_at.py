@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-def print_list_integer(my_list=[]):
-    i = 0
-    while i <= len(my_list):
-        print("{}".format(my_list[i]))
-        i = i + 1
+def element_at(my_list, idx):
+    if idx < 0 or idx > (len(my_list) - 1):
+        return None
+    return (my_list[idx])
