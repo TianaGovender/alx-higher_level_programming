@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
+<<<<<<< HEAD
     i = 0
     while i <= x:
         try:
@@ -9,3 +10,14 @@ def safe_print_list(my_list=[], x=0):
             break
     print("")
     return (i)
+=======
+    total = 0
+    for i in range(x):
+        try:
+            print("{}".format(my_list[i]), end="")
+            total += 1
+        except IndexError:
+            break
+    print("")
+    return (total)
+>>>>>>> 0e05c559114fa0672199d2355b5dd2ac2fa23258
