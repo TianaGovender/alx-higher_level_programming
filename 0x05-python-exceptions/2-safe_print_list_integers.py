@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-def safe_print_integer(value)
+def safe_print_integer(value):
     j = 0
     for i in (0,x):
         try:
