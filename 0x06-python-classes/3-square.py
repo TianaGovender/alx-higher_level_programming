@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """
-defines a square class
+This module defines a square class
 
-Does type and value checks 
+Its implements value and type checks for its attributes 
 """
 
 
