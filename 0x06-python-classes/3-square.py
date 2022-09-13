@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """
-This module defines a Square class
+defines a square
 
-Its implements value and type checks for its attributes 
+Does value and type checks
 """
 
 
 class Square:
-    """Initialise Square
+    """Initialising size and giving error eceptions
     """
     def __init__(self, size=0):
         if type(size) != int:
@@ -17,5 +17,4 @@ class Square:
         self.__size = size
 
     def area(self):
-        """Returns area of square"""
         return (self.__size ** 2)
