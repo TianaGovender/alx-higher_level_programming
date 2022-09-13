@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """
 defines a square class
-
-Does type and value checks 
 """
 
 

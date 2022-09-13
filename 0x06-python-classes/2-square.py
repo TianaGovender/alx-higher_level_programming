@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
 defines a square
+
+Does value and type checks
 """
 
 
