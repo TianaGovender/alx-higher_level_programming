@@ -5,4 +5,6 @@ defines a square
 
 
 class Square:
+    """Class for square
+    """
     pass
