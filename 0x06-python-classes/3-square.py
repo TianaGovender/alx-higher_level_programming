@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module defines a square class
+This module defines a Square class
 
 Its implements value and type checks for its attributes 
 """
