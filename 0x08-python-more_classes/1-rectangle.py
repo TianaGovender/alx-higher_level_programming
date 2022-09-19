@@ -5,14 +5,21 @@ This module defines a Rectangle Object.
 
 
 class Rectangle:
-    """ Rectangle Class
+    """ Rectangle Class.
     """
     def __init__(self, width=0, height=0):
+        """ Intializes a Rectangle.
+
+        Args:
+            width (int): The width of rec.
+            height (int): The Height of rec.
+        """
         self.width = width
         self.height = height
 
     @property
     def width(self):
+        """Get/set the width"""
         return self.__width
 
     @width.setter
@@ -25,6 +32,7 @@ class Rectangle:
 
     @property
     def height(self):
+        """Get/set the height"""
         return self.__height
 
     @height.setter
