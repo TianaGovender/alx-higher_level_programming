@@ -12,7 +12,6 @@ def is_kind_of_class(obj, a_class):
         a_class: Type to check
 
     Returns:
-        response
-     
+        response     
     """
     return type(obj) != a_class and issubclass(type(obj), a_class)

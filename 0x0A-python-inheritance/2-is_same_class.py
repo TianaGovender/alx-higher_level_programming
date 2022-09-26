@@ -13,6 +13,5 @@ def is_same_class(obj, a_class):
 
     Returns:
         response
-     
     """
     return type(obj) == a_class        
