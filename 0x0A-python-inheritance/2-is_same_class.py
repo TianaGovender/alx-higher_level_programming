@@ -5,7 +5,7 @@ Defines a Mylist class
 
 
 def is_same_class(obj, a_class):
-    """Mylist class
+    """implementation
 
     Args:
         obj: object to check
@@ -14,4 +14,4 @@ def is_same_class(obj, a_class):
     Returns:
         response
     """
-    return type(obj) == a_class        
+    return type(obj) == a_class
