@@ -1,22 +1,19 @@
 #!/usr/bin/python3
 """
-Defines a Rectangle class
+This module implements a Square object
 """
 
 
-BaseGeometry = __import__("7-base_geometry").BaseGeometry
+Rectangle = __import__('9-rectangle').Rectangle
 
 
-class Rectangle(BaseGeometry):
-    """ REctangle class
+class Square(Rectangle):
+    """implementation
     """
-    def __init__(self, width, height):
-        """area function
+    def __init__(self, size):
+        """initialization
 
-           Returns:
-           an exception message
+        Args:
+            size (int): size
         """
-        self.integer_validator("width", width)
-        self.integer_validator("height", height)
-        self.__width = width
-        self.__height = height
+        super().__init__(size, size)
