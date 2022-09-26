@@ -4,7 +4,7 @@ Defines a Mylist class
 """
 
 
-def is_same_class(obj, a_class):
+def is_kind_of_class(obj, a_class):
     """Mylist class
 
     Args:
@@ -15,4 +15,4 @@ def is_same_class(obj, a_class):
         response
      
     """
-    return type(obj) == a_class        
+    return type(obj) != a_class and issubclass(type(obj), a_class)
