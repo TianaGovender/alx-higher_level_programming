@@ -2,7 +2,7 @@
 """
 Defines rectangle
 """
-
+from models.base import Base
 
 class Rectangle(Base):
     """Implementations
@@ -77,6 +77,62 @@ class Rectangle(Base):
 
     def display(self):
         """prints rec"""
-        for i in range(self.__width):
-            print("#" * height)
+        if self.width == 0 or self.height == 0:
+            print("")
+            return
 
+        [print("") for y in range(self.y)]
+        for j in range(self.height):
+            [print(" ", end="") for x in range(self.x)]
+            [print("#", end="") for w in range(self.width)]
+            print("")
+
+     def __str__(self):
+         """print statement"""
+         return "[Rectangle] {} {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
+
+     def update(self, *args, **kwargs):
+         """Update The Rec"""
+         if args and len(args) != 0:
+             a = 0
+             for i in args:
+                 if a == 0:
+                     if i is None:
+                        self.__init__(self.width, self.height, self.x, self.y)
+                     else:
+                        self.id = i
+                 elif a == 1:
+                     self.width = i
+                 elif a == 2:
+                     self.height = i
+                 elif a == 3:
+                     self.x = i
+                 elif a == 4:
+                     self.y = i
+                 a += 1
+
+          elif kwargs and len(kwargs) != 0:
+              for k, v in kwargs.items():
+                  if k == "id":
+                      if v is None:
+                          self.__init__(self.width, self.heigth, self.x, self.y)
+                      else:
+                          self.id = v
+                  elif k == "width":
+                      self.width = v
+                  elif k == "height":
+                      self.height = v
+                  elif k == "x":
+                      self.x = v
+                  elif k == "y":
+                      self.y = v
+
+      def to_dictionary(self):
+          """dic rep of rec"""
+          return {
+              "id": self.id,
+              "width": self.width,
+              "heigth": self.height,
+              "x": self.x,
+              "y": self.y
+          }
