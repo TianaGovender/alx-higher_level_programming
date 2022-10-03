@@ -89,7 +89,7 @@ class Rectangle(Base):
 
      def __str__(self):
          """print statement"""
-         return "[Rectangle] {} {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
+         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
 
      def update(self, *args, **kwargs):
          """Update The Rec"""
@@ -132,7 +132,7 @@ class Rectangle(Base):
           return {
               "id": self.id,
               "width": self.width,
-              "heigth": self.height,
+              "height": self.height,
               "x": self.x,
               "y": self.y
           }
