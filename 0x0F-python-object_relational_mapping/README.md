@@ -1,1 +1,1 @@
-project on relational mapping
+Relational object mapping in python 
